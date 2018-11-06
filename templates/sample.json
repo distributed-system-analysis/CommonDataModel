@@ -1,0 +1,54 @@
+{
+  "mappings": {
+    "sample": {
+      "properties": {
+        "cdm": {
+          "properties": {
+            "ver": { "type": "integer" },
+            "doctype": { "type": "keyword" }
+          }
+        },
+	"sample": {
+          "properties": {
+            "id": { "type": "keyword" },
+            "num": { "type": "integer" }
+          }
+        },
+	"iteration": {
+          "properties": {
+            "id": { "type": "keyword" },
+            "params": { "type": "text" },
+            "primary_metric": { "type": "keyword" },
+            "primary_period": { "type": "keyword" }
+          }
+        },
+	"run": {
+          "properties": {
+            "id": { "type": "keyword" },
+            "begin": { "type": "date" },
+            "end": { "type": "date" },
+            "harness_name": { "type": "keyword" },
+            "host": { "type": "keyword" },
+            "ignore": { "type": "boolean" },
+            "tool_names": { "type": "text" },
+            "user": {
+              "properties": {
+                "desc": { "type": "text" },
+                "email": { "type": "keyword" },
+                "name": { "type": "keyword" }
+              }
+            },
+            "bench": {
+              "properties": {
+                "clients": { "type": "text" },
+                "name": { "type": "keyword" },
+                "params": { "type": "text" },
+                "servers": { "type": "text" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
