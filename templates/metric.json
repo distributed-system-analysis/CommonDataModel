@@ -30,7 +30,12 @@
             "cluster": { "type": "keyword" },
             "parent": { "type": "keyword" },
             "source": { "type": "keyword" },
-            "pod": { "type": "keyword" }
+            "pod": { "type": "keyword" },
+            "tx_port": { "type": "keyword" },
+            "rx_port": { "type": "keyword" },
+            "port_pair": { "type": "keyword" },
+            "status": { "type": "keyword" },
+            "stream_id": { "type": "keyword" }
           }
         },
 	"period": {
