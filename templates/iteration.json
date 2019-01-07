@@ -1,6 +1,7 @@
 {
   "mappings": {
     "iteration": {
+      "dynamic": false,
       "properties": {
         "cdm": {
           "properties": {

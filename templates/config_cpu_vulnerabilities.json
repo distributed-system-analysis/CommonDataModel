@@ -1,6 +1,7 @@
 {
   "mappings": {
     "config_cpu_vulnerabilities": {
+      "dynamic": false,
       "properties": {
         "cdm": {
           "properties": {

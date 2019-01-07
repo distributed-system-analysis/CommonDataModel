@@ -1,6 +1,7 @@
 {
   "mappings": {
     "period": {
+      "dynamic": false,
       "properties": {
         "cdm": {
           "properties": {

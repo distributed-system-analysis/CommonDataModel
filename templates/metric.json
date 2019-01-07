@@ -1,6 +1,7 @@
 {
   "mappings": {
     "metric": {
+      "dynamic": false,
       "properties": {
         "cdm": {
           "properties": {

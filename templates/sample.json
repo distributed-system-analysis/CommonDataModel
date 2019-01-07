@@ -1,6 +1,7 @@
 {
   "mappings": {
     "sample": {
+      "dynamic": false,
       "properties": {
         "cdm": {
           "properties": {

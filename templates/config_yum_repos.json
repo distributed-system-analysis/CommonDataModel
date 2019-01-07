@@ -1,6 +1,7 @@
 {
   "mappings": {
     "config_yum_repos": {
+      "dynamic": false,
       "properties": {
         "cdm": {
           "properties": {
