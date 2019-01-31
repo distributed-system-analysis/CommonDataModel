@@ -6,7 +6,7 @@ run.json	: header run.base
 		  ./build.sh run
 
 config_cpu_vulnerabilities.json	: header run.base config_yum_repos.base config_cpu_vulnerabilities.base
-		  ./build.sh config_cpu_vulnerabilities config_yum_repos run
+		  ./build.sh config_cpu_vulnerabilities run
 
 config_yum_repos.json	: header run.base config_yum_repos.base
 		  ./build.sh config_yum_repos run
