@@ -21,5 +21,5 @@ fi
 
 
 for i in `/bin/ls *.json | sed -e s/\.json//`; do
-	echo "curl -X PUT $es_url/cdm$es_ver-$i -H 'Content-Type: application/json' -d@./$i.json"
+	echo "curl -X POST $es_url/cdm$es_ver-$i/$i -H 'Content-Type: application/json' -d@./$i.json"
 done

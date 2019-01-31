@@ -1,0 +1,20 @@
+In this directory, you can:
+
+1) Build the templates for the indices we have
+2) Generate commands to create the templates
+3) Generate the commands to update mappings
+
+To build templates, run "make templates".  The makefile requires
+a "header" file and several base files.
+
+To generate either of the commands, you must have a URL where 
+your ES instance is available.
+
+If you are creating a new ES for CDM, you would first need to
+build the templates, then run "create_indices.sh" to generate
+the commands to create the indices,then run those commands.
+
+If you need to update a mapping, you would first need to update the 
+relevant base file, then re-generate the templates with make, then
+run "update_mappings.sh" to generate the update mappings commands,
+then run those commands.
